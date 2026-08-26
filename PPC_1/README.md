@@ -51,6 +51,14 @@ $$ k_3 = f\left(t_i+\Delta t/2,v_i+k_2\Delta t/2\right), k_4 = f\left(t_i+\Delta
 - velocidade_teorica - Lista de valores da velocidade calculada por método analítico
 - t - Tempo que está sendo calculado na iteração
 - v_teo - Velocidade teóriaca em um ponto do tempo
+- num_var_t - Número de variações no passo de tempo
+- tax_var_Dt - Taxa de variação do passo de tempo
+- Dt_var - Lista com as variações de Dt
+- num_var_Re - Número de variações no passo de Re
+- Re_var - Lista com as variações de Re
+- tax_var_Re - Taxa de variação do passo de Re
+- velocidades_var - Lista contendo todas as listas de velocidades variadas por Re ou Dt
+- tempos_var - Lista contendo todas as listas de tempos variadas por Re ou Dt
 
 ## Dependências e Bibliotecas:
 
@@ -63,6 +71,10 @@ As variaveis de entrada são entrada são:
 - St
 - vo
 - Dt
+- Número de variações de Re
+- Número de variações de Dt
+- Taxa de variação de Dt
+- Taxa de variação de Re
 
 As de saída são:
 - velocidades
@@ -75,7 +87,12 @@ Os dados esperados para entrada são apenas as variáveis físicas, sendo necess
 
 ### Dados de Saída:
 
-São criadas as listas de velocidade e tempo para o caso numérico e analítico, assim como gráficos comparando a velocidade com o tempo, assim como os dois métodos.
+São criadas as listas de velocidade e tempo para o caso numérico e analítico, assim como gráficos comparando a velocidade com o tempo. Dos gráficos criados, temos:
+
+- Velocidade numérica
+- Comparação de velocidade numérica e teórica
+- Comparação entre variados valores de Dt
+- COmparação entre variados valores de Re
 
 ## Procedimento de Execução:
 
@@ -83,8 +100,8 @@ Rode o código em um ambiente Python
 
 ## Validação Metodológica:
 
-O resultado é preciso para análise, os valores condizem bem com o método analítico, entretanto para os casos de $Re\approx 1$ não há comparação precisa, devido à necessidade de escolher valores físicos para o problema, não sendo esse o foco desse trabalho.
+O resultado é preciso para análise, os valores condizem bem com o método analítico.
 
 ## Bibliografia:
 
-Instruções do Professor em sala.
+Instruções do Professor.
