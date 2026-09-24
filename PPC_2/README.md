@@ -50,6 +50,9 @@ $$x_r = -\frac{s}{r},\ \text{para} n = 1$$.
 
 O processo se repete até todas as raízes terem sido encontradas.
 
+## Análise vibratória
+Para o caso de ser utilizado para analisar uma equação regente de um sistema vibratório, existe uma função que consegue calcular as raizes utilizando da função do método de Bairstow e então descreve qual o tipo de sistema que foi inserido (subamortecido, criticamente amortecido, etc.)
+
 
 ## Dicionário de Variáveis utilizadas:
 ### Principal
@@ -98,6 +101,7 @@ Deve-se escolher se quer ou não que a função escreva no terminal quais raizes
 ## Dados de saída
 - Lista xr com valores das raízes encontradas
 - Figura do Fractal de Bairstow das iterações calculadas
+- Análise vibratória
 
 ## Procedimento de Execução:
 
